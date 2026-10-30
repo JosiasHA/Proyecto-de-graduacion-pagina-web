@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoClasificador</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h2>🌱 EcoClasificador</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#clasificar">Clasificar</a>
+            <a href="#reutilizar">Reutilizar</a>
+            <a href="#consejos">Consejos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h1>Reciclar es transformar el futuro</h1>
+
+            <p>
+                Aprende a clasificar tus residuos,
+                reutilizar materiales y cuidar el planeta.
+            </p>
+
+            <button onclick="mostrarMensaje()">
+                Comenzar
+            </button>
+        </section>
+
+        <section id="clasificar">
+            <h2>Clasifica tus materiales</h2>
+            <p>Selecciona un material para aprender a reciclarlo.</p>
+
+            <div id="materiales">
+               </button>
+
+                <button class="tarjeta-material" type="button">
+                    <span class="icono">📦</span>
+                    <h3>Cartón</h3>
+                    <p>Cajas y empaques de cartón.</p>
+                </button>
+
+                <button class="tarjeta-material" type="button">
+                    <span class="icono">🧴</span>
+                    <h3>Plástico</h3>
+                    <p>Botellas y envases plásticos.</p>
+                </button>
+
+                <button class="tarjeta-material" type="button">
+                    <span class="icono">🍾</span>
+                    <h3>Vidrio</h3>
+                    <p>Frascos y botellas de vidrio.</p>
+                </button>
+
+            </div>
+            </div>
+        </section>
+
+        <section id="reutilizar">
+            <h2>Ideas para reutilizar</h2>
+            <p>Descubre qué puedes crear con materiales usados.</p>
+        </section>
+
+        <section id="consejos">
+            <h2>Consejos de reciclaje</h2>
+            <p>Pequeñas acciones pueden generar grandes cambios.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>EcoClasificador © 2026 - Cuidemos nuestro planeta 🌎</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
